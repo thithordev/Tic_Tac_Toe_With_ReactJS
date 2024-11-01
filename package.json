@@ -1,9 +1,12 @@
 {
+  "homepage": "https://thithordev.github.io/Tic_Tac_Toe_With_ReactJS",
   "name": "react.dev",
   "version": "0.0.0",
   "main": "/src/index.js",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -25,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
